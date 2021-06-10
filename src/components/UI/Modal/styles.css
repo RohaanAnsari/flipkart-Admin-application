@@ -1,0 +1,29 @@
+.modal-header {
+  padding: 15px;
+  padding-top: 8px;
+}
+
+/* .btn-primary {
+  background-color: #191919;
+  color: #fff;
+  border: 1px solid #191919;
+} */
+
+.btn {
+  border-radius: 15px;
+}
+
+/* .btn:hover,
+.btn:active,
+.btn:focus,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  border-radius: 15px;
+  background-color: #191919;
+  color: #fff;
+  border: 1px solid #1312127e;
+} */
+.modal-footer {
+  padding: 5px;
+}

@@ -13,7 +13,7 @@
   <li> Add new Products with their description and images  </li>
   <li> Delete any existing product </li>
   <li> Create a whole diffrent page for your product</li>
-  <li> Upload Banners and thumbnails for your product </li>
+  <li> Upload Banners and thumbnails for your Product Page </li>
   <li> Complete Section for orders</li>
   <li> See all the orders for diffrent products </li>
   <li> Update status for selected Order like ordered, packed, shipped and delivered </li>

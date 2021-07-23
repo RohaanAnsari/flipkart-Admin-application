@@ -7,3 +7,11 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
 `;
+
+export const Label = styled.p`
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+`;

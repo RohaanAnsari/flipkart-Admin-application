@@ -1,34 +1,35 @@
-import React, { useEffect, useState } from 'react'
-import Layout from '../../components/layout'
-import { Row, Col, Form, Button, Container } from 'react-bootstrap'
-import Input from '../../components/UI/Input'
-import { login } from '../../actions'
-import { useDispatch, useSelector } from 'react-redux'
-import { Redirect } from 'react-router-dom'
+import React, { useEffect, useState } from 'react';
+import Layout from '../../components/layout';
+import { Row, Col, Form, Button, Container } from 'react-bootstrap';
+import Input from '../../components/UI/Input';
+import { login } from '../../actions';
+import { useDispatch, useSelector } from 'react-redux';
+import { Redirect } from 'react-router-dom';
+import { Wrapper } from './styles';
 
 const Signin = (props) => {
-
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [error, setError] = useState('')
+  const [error, setError] = useState('');
   const dispatch = useDispatch();
-  const auth = useSelector(state => state.auth)
+  const auth = useSelector((state) => state.auth);
 
   const userLogin = (e) => {
     e.preventDefault();
     const user = {
-      email, password
-    }
+      email,
+      password,
+    };
 
-    dispatch(login(user))
-  }
+    dispatch(login(user));
+  };
 
   if (auth.authenticate) {
-    return <Redirect to={`/`} />
+    return <Redirect to={`/`} />;
   }
 
   return (
-    <div>
+    <Wrapper>
       <Layout>
         <Container>
           <Row style={{ marginTop: '50px' }}>
@@ -39,7 +40,9 @@ const Signin = (props) => {
                   placeholder="Enter email"
                   value={email}
                   type="email"
-                  onChange={(e) => { setEmail(e.target.value) }}
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}
                 />
 
                 <Input
@@ -47,17 +50,20 @@ const Signin = (props) => {
                   placeholder="Password"
                   value={password}
                   type="password"
-                  onChange={(e) => { setPassword(e.target.value) }}
+                  onChange={(e) => {
+                    setPassword(e.target.value);
+                  }}
                 />
                 <Button variant="primary" type="submit">
                   Submit
-              </Button>
-              </Form></Col>
+                </Button>
+              </Form>
+            </Col>
           </Row>
         </Container>
       </Layout>
-    </div>
-  )
-}
+    </Wrapper>
+  );
+};
 
-export default Signin
+export default Signin;

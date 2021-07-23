@@ -1,0 +1,17 @@
+.myBtn {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border: 1px solid #fff !important;
+  border-radius: 5px;
+  color: black;
+  background: #eeeeee;
+  font-size: 14px;
+}
+
+.actionBtnContainer {
+  display: flex;
+  align-items: center;
+}

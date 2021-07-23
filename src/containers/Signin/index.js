@@ -44,9 +44,8 @@ const Signin = (props) => {
                     setEmail(e.target.value);
                   }}
                 />
-
+                <Label>Password</Label>
                 <Input
-                  label="Password"
                   placeholder="Password"
                   value={password}
                   type="password"

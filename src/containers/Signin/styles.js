@@ -14,4 +14,5 @@ export const Label = styled.p`
   letter-spacing: 0.6px;
   margin-top: 10px;
   margin-bottom: 15px;
+  color: white;
 `;
